@@ -17,6 +17,5 @@ export default defineConfig({
   optimizeDeps: {
     include: ['lucide-react']
   },
-  assetsInclude: ['**/*.xlsx'],
-  publicDir: false // Disable the public directory
+  assetsInclude: ['**/*.xlsx']
 });
