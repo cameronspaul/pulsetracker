@@ -1,22 +1,25 @@
 import { motion } from 'framer-motion';
+import bullxLogo from '@assets/pfp/bullx.jpg';
+import tradewizLogo from '@assets/pfp/tradewiz.jpg';
+import wavebotLogo from '@assets/pfp/wavebot.jpg';
 
 const partners = [
   {
     name: 'BullX',
     description: 'Partnered with BullX, a secure DEX platform featuring AI-powered trading bots and seamless asset management. Use our referral link get access now.',
-    logo: '/pfp/bullx.jpg',
+    logo: bullxLogo,
     referralLink: 'https://t.me/BullXNeoBot?start=access_L7TSAI47QKN'
   },
   {
     name: 'TradeWiz',
     description: 'Partnered with TradeWiz, delivering industry-leading speed and reliable copy trading execution.',
-    logo: '/pfp/tradewiz.jpg',
+    logo: tradewizLogo,
     referralLink: 'https://t.me/TradeWiz_Solbot?start=r-A626XQTRS3'
   },
   {
     name: 'WaveBot',
     description: 'Partnered with WaveBot, offering lightning-fast trading across Solana, Base, and Ethereum with integrated analytics and security tools.',
-    logo: '/pfp/wavebot.jpg',
+    logo: wavebotLogo,
     referralLink: 'https://t.me/onchain_wavebot?start=rs_608akofe'
   },
 ];

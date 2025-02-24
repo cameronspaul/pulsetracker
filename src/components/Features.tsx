@@ -3,6 +3,17 @@ import { motion } from 'framer-motion';
 import { Search, Filter, Eye, FileSpreadsheet, Wallet, Trophy, Bell, Users, History, Star, RefreshCw, LucideIcon, MousePointerClick } from 'lucide-react';
 import { VideoModal } from './VideoModal';
 
+// Import video assets
+import profitableWalletsVideo from '@assets/videos/profitable_solana_wallets.mp4';
+import scanLiveTradersVideo from '@assets/videos/how_to_scan_live_traders_solana.mp4';
+import analyzeWalletVideo from '@assets/videos/how_to_analyze_solana_wallet.mp4';
+import excelDownloadVideo from '@assets/videos/get_an_excel_download_full_of_solana_trade_data.mp4';
+import useFiltersVideo from '@assets/videos/how_to_use_filters_for_solana_wallets.mp4';
+import analyzeMultipleWalletsVideo from '@assets/videos/how_to_analyze_mulitple_solana_wallets.mp4';
+import findInsiderWalletsVideo from '@assets/videos/how_to_find_insider_solana_wallets.mp4';
+import findWinningWalletsVideo from '@assets/videos/how_to_find_winning_wallets_dexscreener.mp4';
+import paymentVideo from '@assets/videos/how_to_pay_for_pulsetrackersol.mp4';
+
 type Feature = {
   icon: LucideIcon;
   name: string;
@@ -26,7 +37,7 @@ const groupTools: Feature[] = [
     name: 'Daily Winning Wallets', 
     description: 'Daily curated document of wallets of top-performing Solana traders, filtered by ROI, win rate, and key performance metrics.',
     longDescription: 'Get access to a daily-updated list of the most successful crypto wallets. Our advanced algorithms analyze thousands of wallets to identify those with consistent performance, high ROI, and proven trading strategies. Stay ahead of the market by following the best traders.',
-    demoVideo: '/videos/profitable_solana_wallets.mp4',
+    demoVideo: profitableWalletsVideo,
     tier: "Premium"
   },
   { 
@@ -34,7 +45,7 @@ const groupTools: Feature[] = [
     name: 'Real-time Trader Alerts', 
     description: 'Automated scanning of active traders, alerting when wallets achieve 80% win rate and 20% ROI thresholds.',
     longDescription: 'Never miss a profitable trading opportunity with our real-time alert system. Get instant notifications when top traders make moves or when wallets meet our strict performance criteria. Our alerts help you stay informed and ready to act on the most promising opportunities.',
-    demoVideo: '/videos/how_to_scan_live_traders_solana.mp4',
+    demoVideo: scanLiveTradersVideo,
     tier: "Premium"
   },
 ];
@@ -45,7 +56,7 @@ const tools: Feature[] = [
     name: 'Unlimited Wallet Analysis', 
     description: 'Enjoy unrestricted analysis of wallets with no usage limits.',
     longDescription: 'Access detailed wallet analysis without restrictions. Study trading histories, calculate performance metrics, and track success rates for any number of wallets. Our comprehensive analysis tools help you understand what makes successful traders profitable.',
-    demoVideo: '/videos/how_to_analyze_solana_wallet.mp4',
+    demoVideo: analyzeWalletVideo,
     tier: "Standard"
   },
   { 
@@ -53,7 +64,7 @@ const tools: Feature[] = [
     name: '30-Day Trader History', 
     description: 'Review up to 30 days of a trader\'s complete trading history.',
     longDescription: 'Dive deep into a trader\'s recent history with our 30-day historical analysis. See every trade, track performance over time, and understand their strategy evolution. Identify patterns and learn from both successful and unsuccessful trades.',
-    demoVideo: '/videos/how_to_analyze_solana_wallet.mp4',
+    demoVideo: analyzeWalletVideo,
     tier: "Standard"
   },
   { 
@@ -61,7 +72,7 @@ const tools: Feature[] = [
     name: 'Excel Trade History Export', 
     description: 'Download a comprehensive Excel report of a trader\'s activity, including purchase amounts, trade duration, summaries, and helpful charts.',
     longDescription: 'Export detailed trading data for further analysis. Our Excel reports include comprehensive trade histories, performance metrics, and visual charts. Perfect for those who want to conduct their own analysis or maintain detailed records of trading activities.',
-    demoVideo: '/videos/get_an_excel_download_full_of_solana_trade_data.mp4',
+    demoVideo: excelDownloadVideo,
     tier: "Standard"
   },
   { 
@@ -69,7 +80,7 @@ const tools: Feature[] = [
     name: 'Custom Trader Filters', 
     description: 'Apply custom filters to our database of scanned wallets to find traders matching your specific criteria.',
     longDescription: 'Take control of your trader discovery with our powerful filtering system. Set custom parameters for ROI, trade frequency, token preferences, and more. Find exactly the type of traders you want to follow and analyze their strategies in detail.',
-    demoVideo: '/videos/how_to_use_filters_for_solana_wallets.mp4',
+    demoVideo: useFiltersVideo,
     tier: "Premium"
   },
   { 
@@ -77,7 +88,7 @@ const tools: Feature[] = [
     name: 'Batch Wallet Analysis', 
     description: 'Quickly analyze multiple wallets simultaneously and get a summarized performance report.',
     longDescription: 'Save time by analyzing multiple wallets at once. Our batch analysis tool provides comprehensive reports on trading patterns, performance metrics, and risk assessments for multiple wallets. Compare strategies and identify the most successful approaches efficiently.',
-    demoVideo: '/videos/how_to_analyze_mulitple_solana_wallets.mp4',
+    demoVideo: analyzeMultipleWalletsVideo,
     tier: "Premium"
   },
   { 
@@ -85,7 +96,7 @@ const tools: Feature[] = [
     name: 'Insider Search', 
     description: 'Identify early buyers before significant price pumps by analyzing token price movements on DEXScreener tokens.',
     longDescription: 'Get ahead of the market by identifying early buyers and potential price movements. Our insider search tool analyzes on-chain data to spot patterns and unusual trading activity that might indicate upcoming price action. Stay informed about potential opportunities before they become widely known.',
-    demoVideo: '/videos/how_to_find_insider_solana_wallets.mp4',
+    demoVideo: findInsiderWalletsVideo,
     tier: "Premium"
   },
   { 
@@ -93,7 +104,7 @@ const tools: Feature[] = [
     name: 'Top Token Trader Finder', 
     description: 'Provide a token, and we\'ll identify and analyze the top-performing traders for that specific token.',
     longDescription: 'Find the most successful traders for any specific token. Enter a token address, and our system will identify wallets with the best trading history for that token. Understand who the experts are and learn from their trading patterns.',
-    demoVideo: '/videos/how_to_find_winning_wallets_dexscreener.mp4',
+    demoVideo: findWinningWalletsVideo,
     tier: "Premium"
   },
 ];
@@ -104,14 +115,14 @@ const basicFeatures: BasicFeature[] = [
         name: 'Priority Support',
         description: 'Get fast and dedicated customer support.',
         longDescription: 'Enjoy premium support from our dedicated team. Get quick responses to your questions, technical assistance when needed, and priority handling of any issues. We\'re here to ensure you get the most out of our platform.',
-        demoVideo: '/videos/how_to_pay_for_pulsetrackersol.mp4',
+        demoVideo: paymentVideo,
     },
     {
         icon: RefreshCw,
         name: 'Access to Latest Analytics Updates',
         description: 'Stay up-to-date with the newest features and analytical tools.',
         longDescription: 'Be the first to access new features and improvements. Our platform is constantly evolving with new analytical tools, metrics, and features to help you make better trading decisions. Regular updates ensure you always have the best tools at your disposal.',
-        demoVideo: '/videos/how_to_analyze_solana_wallet.mp4',
+        demoVideo: analyzeWalletVideo,
     },
 ];
 

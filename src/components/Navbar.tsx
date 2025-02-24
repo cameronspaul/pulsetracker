@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '@assets/images/logo.png';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -52,11 +53,11 @@ export const Navbar = () => {
           <div className="flex-shrink-0">
             <a 
               href="#home" 
-              className="text-white font-bold text-xl flex items-center gap-2"
+              className="text-white font-bold text-xl flex items-center gap-0"
               onClick={(e) => handleNavClick(e, '#home')}
             >
-              <img src="https://pulsetrackersol.com/logo.png" alt="PulseTracker Logo" className="w-19 h-10" />
-              PulseTracker
+              <img src={logo} alt="PulseTracker Logo" className="w-16 h-16" />
+              PulseTrackerSol
             </a>
           </div>
 
